@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1">abcdefghijklmn</p>
+	<p id="p2">
+		학교종이 땡땡땡 <br> abcdefg
+	</p>
+
+	<p>
+		<br>객체조작 - .html(html문자열)<br> •파라미터로 html 문자열을 넘기면 태그가 반영된다.<br>
+		<br>■객체조작 - .html() <br>•파라미터가 없으면 태그에 포함된 html을 가져온다 <br>
+		<br>•p1태그의 내용을 "<strong>가나다라마바사아자차카타라하</strong>“ 로 변경해 보세요 <br>•p2태그의
+		내용을 text() 를 이용하여 “"<strong>가나다라마바사아자차카타라하</strong>“ 로 변경해 보세요<br>
+		•p1태그의 html을 값을 가져와 console에 찍어보세요<br> •p2태그의 내용을 text() 를 이용하여
+		가져와 console에 찍어보세요<br>
+	</p>
+</body>
+
+<script type="text/javascript">
+	// html -> 태그로 인식
+	$("#p1").html("<strong>가나다라마바사아자차카타라하</strong>");
+	
+	var p1 = $("#p1").html();
+	console.log(p1);
+
+	// text 는 br 태그 인식 안하고 text 만 읽어옴 -> 그래서 html로 사용해야함
+	var str = $("#p2").html();
+	console.log(str);
+</script>
+
+</html>

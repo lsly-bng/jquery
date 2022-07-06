@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1">abcdefghijklmn</p>
+	<p id="p2">학교종이 땡땡땡 abcdefg</p>
+
+	<p>
+		<br>■객체조작 - .text(문자열)<br> •파라미터로 문자열을 넘기면 태그 안의 텍스트를 괄호안의
+		문자열로 변경한다.<br> <br>
+		<br> •p1태그의 텍스트를 “가나다라마바사” 로 변경해 보세요<br> •p2태그의 텍스트값을 가져와
+		console에 찍어보세요
+	</p>
+</body>
+
+<script type="text/javascript">
+	$("#p1").text("가나다라마바사");
+	var str = $("#p2").text();
+
+	console.log(str);
+</script>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<style>
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+</style>
+
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		<li>다섯번째 아이템입니다.</li>
+	</ul>
+	<p>
+		<br>■객체조작 - .addClass(“클래스명”), .removeClass(“클래스명”)<br>
+		•선택자로 지정된 태그의 에 클래스가 추가/제거 된다.<br> <br>
+		<br>•아래와 같이 되도록 class값을 변경해 보세요<br>
+	</p>
+</body>
+
+<script type="text/javascript">
+	//클래스 삭제
+	//$("#first").removeClass("red");
+	//클래스 추가
+	$("#first").addClass("blue");
+</script>
+
+</html>

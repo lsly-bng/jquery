@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- html 엔진 그림을 그릴려면 자기만의 방식으로 변환 -->
+	<h1>jquery 연습</h1>
+	<p>제이쿼리 연습 페이지 입니다.</p>
+
+	<div>
+		<button type="button">button</button>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	// DOM(Document Object Model)이 생성된 직후 작동한다. -> ready 
+	// $ 가 인식이 안되면 jQuery 연결이 안된 것임
+	// 화면결과 : pop-up창
+	$(document).ready(function() {
+		alert("ready");
+	});
+
+	//페이지가 로딩된 후 작동한다 -> load (코드방식1)
+	// 이렇게 쓰는 곳이 많다 -> 변수에 넣기보다 익명 함수로 사용
+	$(window).load(function() {
+		alert("load");
+	});
+
+	/* 
+	 //(코딩방식2)
+	 var act = 
+	 }
+
+	 $(window).load(act);
+	 */
+</script>
+
+
+</html>

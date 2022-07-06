@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<style>
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+</style>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	이름:
+	<input type="text" name="name" value="">
+	<br> 비밀번호:
+	<input type="password" name="password" value="">
+	<br>
+	<textarea name="content"></textarea>
+	<br>
+	<br> 이름2:
+	<input type="text" name="name2" value="홍길동" value="">
+	<br> 비밀번호2:
+	<input type="password" name="password2" value="1234">
+	<br>
+	<textarea name="content2">산토끼토끼야</textarea>
+
+	<p>
+		<br>■객체조작 - .val() .val(“값”)<br> •주로 form 엘리먼트에서 사용됨<br>
+		•form 태그의 value값을 읽어오거나, value값을 입력하는데 사용<br> <br> <br>•아래와
+		같이 되도록 val() 함수를 이용하여 value값을 추가해 보세요<br> •아래의 value값을 읽어
+		console에 출력해 보세요<br>
+	</p>
+
+</body>
+
+<script type="text/javascript">
+	//.val 통해서 값 입력하게
+	$("[name='name']").val("kwakwt");
+	
+	$("[name='password']").val("123");
+	
+	$("[name='content']").val("Hello Stranger");
+
+	//.val 통해서 값 불러오기
+	var name = $("[name='name2']").val();
+	console.log(name);
+	
+	var password = $("[name='password2']").val();
+	console.log(password);
+	
+	var content = $("[name='content2']").val();
+	console.log(content);
+</script>
+</html>

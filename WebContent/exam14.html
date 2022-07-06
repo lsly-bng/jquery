@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		<li id="fourth" class="del">다섯번째 아이템입니다.</li>
+	</ul>
+
+	<p>
+		<br>객체조작 - $(this)<br> •현재 클릭(선택) 한 엘리먼트<br>
+		$(셀렉터).on("click", function(){ var $this = $(this);
+		console.log($this); });<br> <br> <br>•클릭한 li 엘리먼트의 id
+		값을 console 에 출력하세요 attr() 이용<br> •클릭한 li 엘리면트의 출력값을 변경해보세요
+	</p>
+
+</body>
+
+<script type="text/javascript">
+	$("li").on("click", function() {
+		var $this = $(this); // 변수 이름은 $this로 많이 표기한다. $(this) 는 중요한 개념이다**
+
+		//클릭시 text 내용 출력하기
+		var str = $this.text();
+		console.log(str);
+
+		//클릭시 class 출력하기
+		var cName = $this.attr("class");
+		console.log(cName);
+
+		//클릭시 id 출력하기
+		var idName = $this.attr("id");
+		console.log(idName);
+	});
+</script>
+
+
+</html>

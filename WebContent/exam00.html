@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li>순서1 순서1 순서1 순서1 순서1</li>
+		<li>순서2 순서2 순서2 순서2 순서2</li>
+		<li>순서3 순서3 순서3 순서3 순서3</li>
+		<li>순서4 순서4 순서4 순서4 순서4</li>
+	</ul>
+
+
+	<p>텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</p>
+	<p>텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</p>
+	<p>텍스트3 텍스트3 텍스트3 텍스트3 텍스트3</p>
+	<p>텍스트4 텍스트4 텍스트4 텍스트4 텍스트4</p>
+
+</body>
+
+<script type="text/javascript">
+	// 굳이 변수를 만들 필요 없음
+	var lis = $("li");
+	console.log(lis);
+	lis.css("color", "#ff0000");
+
+	// 태그로 선택 가능 -> 이렇게 하면 됨
+	$("li").css("color", "#ff0000");
+
+	// p 태그 파랑색 만들기 예제
+	$("p").css("color", "#0000ff");
+</script>
+
+
+
+
+</html>

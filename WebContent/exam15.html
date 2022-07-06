@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+	</ul>
+	<input id="btn" type="button" VALUE="li요소추가">
+
+	<p>
+		<br>•버튼을 클릭하여 li 요소를 추가해 보세요<br> •세번째 요소 클릭시 텍스트를 콘솔창에 출력해
+		보세요<br> •여섯번째 요소 클릭시 텍스트를 콘솔창에 출력해 보세요<br>
+	</p>
+</body>
+
+<script type="text/javascript">
+	// 버튼 클릭했을때 뒤에 (append) <li> 추가
+	$("#btn").on("click", function() {
+		console.log("CLICK");
+
+		$("ul").append("<li>다섯번째 아이템입니다</li>");
+		$("ul").append("<li>여섯번째 아이템입니다</li>");
+	});
+
+	// 클릭할때("click") ul아래있는li ("li") 작동해라(function(){})
+	$("ul").on("click", "li", function() {
+		console.log("CLICK - <ul>");
+
+		var $this = $(this);
+
+		//text 출력
+		var str = $this.text();
+		console.log(str);
+	});
+</script>
+
+</html>

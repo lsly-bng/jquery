@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<input id="btn" type="button" VALUE="js테스트버튼">
+		<h1 id="display">이름출력영역</h1>
+	</div>
+
+	<p>
+		<br>이벤트 - click<br> •마우스가 클릭 되었을때<br>
+		$(셀렉터).on("click", function(){ }); <br> /* 셀렉터로 지정한 태그가 클릭되었을 때
+		실행하는 처리 */<br> <br> <br>•버튼을 클릭하면 아래와 같이 되도록 작성하세요<br>이름출력영영->홍길동(빨강)<br>
+	</p>
+
+</body>
+
+<script type="text/javascript">
+	$("#btn").on("click", function() {
+		console.log("CLICK");
+		//방법(1)
+		//var tag = $("#display");
+		//tag.html("<font color='#ff0000'>홍길동</font>")
+
+		//방법(2)
+		$("#display").text("홍길동");
+		$("#display").css("color", "#ff0000");
+	});
+
+	//h3태그를 클릭했을떄
+	$("#display").on("click", function() {
+		console.log("PRINT h3")
+	});
+</script>
+
+
+</html>

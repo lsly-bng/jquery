@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+
+<body>
+	<ul>
+		<li class="first">텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</li>
+		<li class="second">텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="first">텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</li>
+		<li class="second">텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="first">텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</li>
+		<li class="second">텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li class="first">텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</li>
+		<li class="second">텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+	</ul>
+
+	<p>
+		<br>선택자(selector) – [속성], [속성=값] <br>•특정 속성을 가진 html태그를
+		컨트롤하기 위해 사용<br>
+		<br>
+		<br>•css() 함수를 이용하여 class 속성을 가진 li엘리먼트의 색을 빨간색으로 변경하세요<br>
+		•css() 함수를 이용하여 class 의 값이 first 인 li엘리먼트의 색을 파란색으로 변경하세요
+	</p>
+
+</body>
+
+<script type="text/javascript">
+	// 속성(class)는 []로 구분 (예: id=#, class=., tag=태그명) //
+	//$("[class]").css("color", "#ff0000");
+
+	// 클래스명으로 가져오는 방법
+	//$(".first").css("color", "#0000ff");
+
+	// 속성 + 속성명 
+	$('[class="first"]').css("color", "#00ff00")
+	$("[class='second']").css("color", "#0000ff")
+</script>
+
+
+</html>
